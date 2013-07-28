@@ -1,0 +1,28 @@
+include layouts/application
+    .content
+        .login_form
+            h4.login_header Sign in!
+            form(action="accounts/login", method="post")
+                .form_row
+                    label(for="email") Email:
+                    input(type="text", name="email")
+                .form_row
+                    label(for="password", name="password") Password:
+                    input(type="password")
+                .form_row
+                    input(type="submit")
+        .signup_form
+            h4.signup_header Sign up!
+            form(action="accounts/create", method="post")
+                .form_row
+                    label(for="email") Email:
+                    input(type="text", name="email")
+                .form_row
+                    label(for="password") Password:
+                    input(type="password", name="password")
+                .form_row
+                    label(for="verify_password") Password:
+                    input(type="password", name="verify_password")
+                .form_row
+                    input(type="submit")
+

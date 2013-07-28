@@ -1,0 +1,20 @@
+{
+    "name": "nightowl",
+    "version": "0.0.0",
+    "description": "A basic nails application",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "author": "",
+    "license": "BSD",
+    "bugs": {
+        "url": "https://github.com/stantonwjones/nails-boilerplate/issues"
+    },
+    "dependencies": {
+        "nails-boilerplate": "git://github.com/stantonwjones/nails-boilerplate.git#master",
+        "jade": "*",
+        "mongodb": "*"
+    }
+}
