@@ -10,6 +10,7 @@ var config = {
     VIEWS_ROOT: APP_ROOT + '/views',
 	APP_ROOT: APP_ROOT,
 	SERVER_ROOT: SERVER_ROOT,
+    UPLOAD_DIR: SERVER_ROOT + '/public',
 	PORT: 3333
 };
 

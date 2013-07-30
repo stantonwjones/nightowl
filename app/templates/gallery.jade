@@ -1,0 +1,14 @@
+include layouts/application
+    .content
+        h2 Gallery
+        .gallery-menu
+            a(href="/") Home
+        ul.photos
+        -for ( var i in photos ) {
+            -console.log(photos[i]);
+            - var photodir = '/public/' + photos[i];
+            - console.log(photodir);
+            li
+                img(src=photodir)
+        -}
+

@@ -1,0 +1,13 @@
+include layouts/application
+    .content
+        h1 You are logged in as #{email}
+        .menu
+            ul
+                li
+                    a(href="/photos/show?user=me") My Photos
+        form(action="/photos/upload", method="post", enctype="multipart/form-data")
+            .form_row
+                label(for="picture") File:
+                input(type="file", name="picture")
+            .form_row
+                input(type="submit")
