@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    margin: 0px;
+}
+
+.header {
+    height: 40px;
+    overflow: hidden;
+    border: 1px solid #CCCCCC;
+    background: linear-gradient( to bottom, #EEE 50%, #DDD 90%, #ccc 100%);
+}
+.header-item {
+    padding: 4px;
+}
+.header-item:not(:last-child) {
+    border-right: 2px solid #CCCCCC;
+}
+.header-item:last-child {
+    width: 20%;
+    text-align: center;
+}
+.header-item.button {
+    height: 100%;
+    width: 20%;
+}
+
+.newsfeed {
+}
+.newsfeed-item {
+    padding: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: #CCCCCC;
+    overflow: hidden;
+}
+.newsfeed-item .thumbnail {
+    float: left;
+    width: 30%;
+    text-align: center;
+}
+.thumbnail img {
+    max-width: 100%;
+    max-height: 100px;
+}
+.newsfeed-item .caption {
+    float: left;
+    padding: 0px 5px;
+    width: 70%;
+}
+
+/**** LIB ****/
+.float-left {
+    float: left;
+}
+.float-right {
+    float-right;
+}
+.button {
+    background: linear-gradient( to bottom, #EEE 50%, #DDD 90%, #ccc 100%);
+    /*background: -webkit-linear-gradient(top , #EEE 50%, #DDD 90%, #ccc 100%);*/
+}
+.button:hover {
+    background: linear-gradient( to top, #EEE 50%, #DDD 90%, #ccc 100%);
+}
+.button.toggled {
+    background: linear-gradient( to top, #EEE 40%, #DDD 80%, #ccc 90%);
+}
