@@ -20,7 +20,7 @@
 var routes = [
 	// Routes the root request to index.html
 	['get', /^\/$/, {controller: 'homecontroller', action: 'index'}],
-    ['get', /^\/favicon\.ico$/, {public: true}],
+    ['get', /^\/favicon\.ico$/, {public: true, path: 'img/favicon.ico'}],
     ['get', /^\/public\/*/, {public: true}],
 	// A test route which routes the first part of pathname to controller and the second to the action
 	['get', /^\/(\w+)\/(\w+)$/i, {1: 'controller', 2: 'action'}],
